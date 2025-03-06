@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Si Botak - Website Lucu dan Edukasi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Website Si Botak!</h1>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                    <li>
+                              <a href="#node">Data Tree</a>
+                              <ul class="dropdown">
+                                  <li><a href="#pengertian">Pengertian</a></li>
+                                  <li>
+                                      <a href="#istilah">Istilah</a>
+                                      <ul class="dropdown">
+                                          <li><a href="#istilah">Node</a></li>
+                                          <li><a href="#istilah">Child Node</a></li>
+                                          <li><a href="#istilah">Leaf Node</a></li>
+                                          <li><a href="#istilah">Root</a></li>
+                                          <li><a href="#istilah">Internal Node</a></li>
+                                          <li><a href="#istilah">Edge</a></li>
+                                          <li><a href="#istilah">Subtree</a></li>
+
+                                          <li><a href="#istilah">Height Of Node</a></li>
+                                          <li><a href="#istilah">Depth Of Node</a></li>
+                                          <li><a href="#istilah">Height Of Tree</a></li>
+                                          <li><a href="#istilah">Degree Of Node</a></li>
+                                          <li><a href="#istilah">Degree Of Tree</a></li>
+                                      </ul>
+                                  </li>
+                                  <li><a href="#penerapan">Penerapan</a></li>
+                                  <li><a href="#gambar">Gambar</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                    <a href="#si-botak">Si Botak</a>
+                    <ul class="dropdown">
+                        <li><a href="#gambar">Siapa Botak?</a></li>
+                        <li><a href="#kutipan">Kata Kata Hari Ini</a></li>
+                        <li><a href="#meme">Dokumentasi Botak</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Bagian baru untuk Pengertian Node -->
+    <section id="pengertian">
+        <h2>Pengertian Node</h2>
+        <p>Tree adalah tipe struktur data yang sifatnya non-linier dan berbentuk hierarki.</p>
+        <pre>
+• Non-linier = Data tidak tersusun dalam satu baris berurutan.
+• Hierarki = Data memiliki tingkatan, dengan satu elemen utama di atas (root) dan elemen-elemen lainnya bercabang ke bawah (node).        </pre>
+        <p>Struktur data tree terdiri atas simpul (node) yang menyimpan nilai dan memiliki rujukan ke simpul anak (child node). Setiap node dihubungkan oleh garis (edge)</p>
+    </section>
+
+    <section id="istilah">
+        <h2>Istilah-Istilah Pada Tree</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Istilah</th>
+                    <th>Pengertian</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Node</td>
+                    <td>Node atau simpul adalah entitas pada struktur data tree yang mengandung sebuah nilai dan pointer yang menunjuk simpul di bawahnya (child node).</td>
+                </tr>
+                <tr>
+                    <td>Child node</td>
+                    <td>Child node atau simpul anak adalah simpul turunan dari simpul di atasnya.</td>
+                </tr>
+                <tr>
+                    <td>Leaf Node</td>
+                    <td>Leaf node atau simpul daun adalah simpul yang tidak memiliki child node dan merupakan node yang paling bawah dalam struktur data tree</td>
+                </tr>
+                <tr>
+                    <td>Root</td>
+                    <td>Root atau akar adalah simpul teratas dari sebuah tree.</td>
+                </tr>
+                <tr>
+                    <td>Internal node</td>
+                    <td>Internal node adalah istilah untuk menyebut simpul yang memiliki minimal satu child node.</td>
+                </tr>
+                <tr>
+                    <td>Edge</td>
+                    <td>Edge merujuk pada garis yang menghubungkan antara dua buah simpul dalam tree.</td>
+                </tr>
+                <tr>
+                    <td>Subtree</td>
+                    <td>Subtree adalah setiap simpul dari tree beserta turunannya.</td>
+                </tr>
+                <tr>
+                    <td>Height of Node</td>
+                    <td>Height of node adalah jumlah edge dari sebuah node ke leaf node yang paling dalam.</td>
+                </tr>
+                <tr>
+                    <td>Depth of Node</td>
+                    <td>Depth of node adalah banyaknya edge dari root ke sebuah node.</td>
+                </tr>
+                <tr>
+                    <td>Height of Tree</td>
+                    <td>Height of tree dapat diartikan sebagai panjang jalur terpanjang dari simpul akar ke simpul daun dari sebuah tree.</td>
+                </tr>
+                <tr>
+                    <td>Degree of Node</td>
+                    <td>Jumlah cabang yang melekat pada simpul disebut Degree of node atau derajat simpul. Derajat simpul pada sebuah leaf node adalah 0.</td>
+                </tr>
+                <tr>
+                    <td>Degree of Tree</td>
+                    <td>Derajat maksimum simpul di antara semua simpul pada tree disebut Degree of tree.</td>
+                </tr>
+    
+
+            </tbody>
+        </table>
+        </section>
+
+
+        <section id="jenistree">
+            <h2>Jenis-Jenis Tree</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Jenis Tree</th>
+                        <th>Pengertian</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>General Tree</td>
+                        <td>Struktur data tree yang tidak memiliki batasan jumlah node pada hierarki tree disebut General tree. Setiap simpul atau node bebas memiliki berapapun child node. </td>
+                    </tr>
+                    <tr>
+                        <td>Binary Tree</td>
+                        <td>Binary tree adalah jenis tree yang simpulnya hanya dapat memiliki paling banyak 2 simpul anak (child node). Kedua simpul tersebut biasa disebut simpul kiri (left node) dan simpul kanan (right node). Tree tipe ini lebih populer daripada jenis lainnya.</td>
+                    </tr>
+                    <tr>
+                        <td>Balanced Tree</td>
+                        <td>Apabila tinggi dari subtree sebelah kiri dan subtree sebelah kanan sama atau kalaupun berbeda hanya berbeda 1, maka disebut sebagai balanced tree.</td>
+                    </tr>
+                    <tr>
+                        <td>Binary Search Tree</td>
+                        <td>Sesuai dengan namanya, Binary search tree digunakan untuk berbagai algoritma pencarian dan pengurutan. Contohnya seperti AVL tree dan Red-black tree. Struktur data tree jenis ini memiliki nilai pada simpul sebelah kiri lebih kecil daripada induknya. Sedangkan nilai simpul sebelah kanan lebih besar dari induknya.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    
+        <section id="penerapan">
+            <h2>Penerapan dalam Kehidupan Sehari-Hari</h2>
+            <p>Silsilah keluarga dapat direpresentasikan menggunakan struktur data tree, di mana setiap node mewakili individu dalam keluarga. Berikut adalah beberapa penerapan dari struktur tree dalam konteks silsilah keluarga:</p>
+            
+            <img src="assets/familytree.jpg" alt="Silsilah Keluarga" width="600px" />
+            <div class="source">Sumber: https://mmc.tirto.id/image/share/socmed/2023/08/03/ilustrasi-pohon-keluarga--istock_ratio-16x9.jpg</div>
+
+            <ul>
+                <li><strong>Representasi Keluarga:</strong> Setiap anggota keluarga dapat diwakili sebagai node, dengan hubungan orang tua dan anak sebagai edge.</li>
+                <li><strong>Menampilkan Hubungan:</strong> Memudahkan untuk melihat hubungan antar anggota keluarga, seperti kakek, nenek, dan cucu.</li>
+                <li><strong>Menelusuri Garis Keturunan:</strong> Memungkinkan pengguna untuk menelusuri garis keturunan dari satu individu ke individu lainnya.</li>
+            </ul>
+            <p>Selain itu, struktur tree juga sering digunakan dalam navigasi website:</p>
+            <ul>
+                <li><strong>Menu Navigasi:</strong> Struktur menu pada website sering kali diatur dalam bentuk tree, di mana setiap kategori dapat memiliki subkategori.</li>
+                <li><strong>Hierarki Konten:</strong> Memudahkan pengguna untuk memahami hierarki konten di dalam website, dari halaman utama hingga halaman sub.</li>
+                <li><strong>Pencarian yang Efisien:</strong> Memungkinkan pencarian yang lebih efisien dengan mengorganisir konten dalam struktur yang teratur.</li>
+            </ul>
+        </section>
+        
+
+    <section id="kenalan">
+        <h2>Kenalan dengan Si Botak</h2>
+        <p>Ini adalah teman kami yang botak. Dia sangat bangga dengan kepalanya yang bersih dan mengkilap!</p>
+    </section>
+
+    <section id="fakta">
+        <h2>Fakta Menarik tentang Kebotakan</h2>
+        <ul>
+            <li>Kebotakan bisa disebabkan oleh faktor genetik.</li>
+            <li>Beberapa orang percaya bahwa kebotakan membuat seseorang terlihat lebih dewasa.</li>
+            <li>Botak itu keren! Banyak selebriti yang botak dan tetap terlihat menawan.</li>
+        </ul>
+    </section>
+
+    <section id="galeri">
+        <h2>Galeri</h2>
+        <p>Berikut adalah beberapa gambar lucu tentang kebotakan:</p>
+        <img src="https://via.placeholder.com/150" alt="Gambar Lucu 1">
+        <img src="https://via.placeholder.com/150" alt="Gambar Lucu 2">
+        <img src="https://via.placeholder.com/150" alt="Gambar Lucu 3">
+    </section>
+
+    <section id="kuis">
+        <h2>Kuis Si Botak</h2>
+        <p>Siap untuk menguji pengetahuanmu tentang kebotakan? Ayo kita mulai!</p>
+        <button onclick="alert('Kuis belum tersedia!')">Mulai Kuis</button>
+    </section>
+
+    <section id="fun-fact">
+        <h2>Fun Fact</h2>
+        <p>Apakah kamu tahu? Kebotakan bisa membuat seseorang lebih mudah dikenali!</p>
+    </section>
+
+    <section id="gambar">
+        <h2>Gambar Lucu</h2>
+        <p>Berikut adalah gambar lucu tentang kebotakan:</p>
+        <img src="https://via.placeholder.com/150" alt="Gambar Lucu 4">
+    </section>
+
+    <section id="kutipan">
+        <h2>Kutipan Lucu</h2>
+        <p>"Kepala botak adalah tanda kecerdasan yang tinggi!"</p>
+    </section>
+
+    <section id="tips">
+        <h2>Tips Keren</h2>
+        < p>Jadilah percaya diri! Tampil dengan gaya yang unik dan jangan ragu untuk menunjukkan kepalamu yang bersih. Gunakan produk perawatan kulit kepala untuk menjaga kesehatan kulitmu.</p>
+    </section>
+
+    <section id="meme">
+          <h2>Dokumentasi</h2>
+          <div style="display: flex; gap: 20px;">
+                    <video width="400" height="600" controls>
+                        <source src="assets/mememarchel.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <img src="assets/marchel2.jpeg" alt="Meme Lucu" width="450" height="600">
+                    <img src="assets/marchel3.jpeg" alt="Meme Lucu" width="450" height="600">
+                </div>
+          </section>
+      
+    
+    <footer>
+        <p>&copy; 2025 Si Botak. All rights reserved.</p>
+    </footer>
+  
+</body>
+</html>

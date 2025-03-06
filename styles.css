@@ -1,0 +1,165 @@
+body {
+          font-family: 'Arial', sans-serif;
+          margin: 0;
+          padding: 20px;
+          background-color: #f4f4f4;
+      }
+      
+      table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 2px solid #375bcd; /* Warna border */
+        padding: 10px;
+        text-align: left;
+        background-color: #f9f9f9; /* Warna latar belakang */
+        transition: background-color 0.3s; /* Efek transisi */
+    }
+    th {
+        background-color: #375bcd; /* Warna latar belakang header */
+        color: white; /* Warna teks header */
+    }
+    td:hover {
+        background-color: #30c1ff; /* Warna latar belakang saat hover */
+    }
+
+      header {
+          background: #375bcd; /* Warna biru yang diinginkan */
+          color: #fff;
+          padding: 20px 0;
+          text-align: center;
+          border-radius: 8px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      
+      h1 {
+          margin: 0;
+          font-size: 2.5em; /* Ukuran font yang lebih besar */
+          margin-bottom: 25px; /* Jarak antara judul dan navbar */
+      }
+      
+      .navbar {
+          margin-top: 10px;
+      }
+      
+      .nav-menu {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex; /* Menggunakan flexbox untuk navbar */
+          justify-content: center; /* Menyusun item di tengah */
+          flex-wrap: wrap; /* Membungkus item jika diperlukan */
+      }
+      
+      .nav-menu li {
+          margin: 0 15px; /* Jarak antar item */
+          position: relative; /* Untuk dropdown */
+          transition: transform 0.3s; /* Efek transisi saat hover */
+      }
+      
+      .nav-menu li:hover {
+          transform: scale(1.1); /* Membesarkan item saat hover */
+      }
+      
+      .nav-menu li a {
+          color: #fff;
+          text-decoration: none;
+          font-weight: bold;
+          padding: 10px 15px; /* Padding untuk area klik yang lebih besar */
+          border-radius: 5px; /* Sudut membulat */
+          transition: background 0.3s, color 0.3s; /* Efek transisi saat hover */
+      }
+      
+      .nav-menu li a:hover {
+          background: #ffcc00; /* Warna saat hover */
+          color: #000; /* Warna teks saat hover */
+      }
+      
+      .dropdown {
+          display: none; /* Sembunyikan dropdown secara default */
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background: #375bcd;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          opacity: 0;
+          transition: opacity 0.3s;
+          margin-top: 10px;
+          width: 150px;
+          text-align: left;
+      }
+      
+      .nav-menu li:hover > .dropdown {
+          display: block; /* Tampilkan dropdown saat hover pada item menu */
+          opacity: 1;
+      }
+      
+      /* CSS untuk submenu */
+      .dropdown li:hover > .dropdown {
+          display: block; /* Tampilkan submenu saat hover pada item dropdown */
+          opacity: 1;
+          left: 100%; /* Tempatkan submenu di sebelah kanan */
+          top: 0;
+      }
+      
+      .dropdown li {
+          margin: 0; /* Tidak ada margin untuk item dropdown */
+      }
+      
+      .dropdown li a {
+          padding: 10px 15px; /* Padding untuk item dropdown */
+          display: block; /* Membuat area klik lebih besar */
+          color: #fff; /* Warna teks dropdown */
+      }
+      
+      .dropdown li a:hover {
+          background: #ffcc00; /* Warna saat hover pada dropdown */
+          color: #000; /* Warna teks saat hover pada dropdown */
+      }
+      
+      section {
+          margin: 20px 0;
+          padding: 15px;
+          background: #ffffff;
+          border-radius : 8px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      
+      footer {
+          text-align: center;
+          margin-top: 20px;
+          font-size: 0.9em;
+          color: #777;
+      }
+      
+      /* Media Query untuk Responsivitas */
+      @media (max-width: 768px) {
+          .nav-menu {
+              flex-direction: column; /* Mengubah arah menjadi kolom */
+              align-items: center; /* Menyusun item di tengah */
+          }
+      
+          .nav-menu li {
+              margin: 10px 0; /* Jarak antar item vertikal */
+          }
+      
+          .dropdown {
+              position: static; /* Mengubah posisi dropdown untuk tampilan mobile */
+              width: 100%; /* Lebar dropdown 100% pada perangkat mobile */
+          }
+      
+          h1 {
+              font-size: 2em; /* Ukuran font judul lebih kecil di perangkat mobile */
+          }
+      
+          section {
+              padding: 10px; /* Padding lebih kecil di perangkat mobile */
+          }
+      }
+      
+      /* Tambahkan margin bawah pada navbar */
+      .navbar {
+          margin-bottom: 20px; /* Jarak antara navbar dan konten di bawahnya */
+      }
