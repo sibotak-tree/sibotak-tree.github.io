@@ -121,7 +121,7 @@ body {
       
       section {
           margin: 20px 0;
-          padding: 15px;
+          padding: 1px 15px;
           background: #ffffff;
           border-radius : 8px;
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -163,3 +163,17 @@ body {
       .navbar {
           margin-bottom: 20px; /* Jarak antara navbar dan konten di bawahnya */
       }
+
+      blockquote {
+        margin: 5px 0; /* Jarak atas dan bawah blockquote */
+        padding: 10px; /* Padding dalam blockquote */
+        border-left: 4px solid #375bcd; /* Garis di sebelah kiri */
+        background-color: #f9f9f9; /* Warna latar belakang */
+    }
+    
+    blockquote footer {
+        text-align: right; /* Mengatur teks footer ke kanan */
+        font-style: italic; /* Mengubah gaya font menjadi italic */
+        color: #555; /* Warna teks footer */
+        margin-top: 1px; /* Jarak atas footer */
+    }
