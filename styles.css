@@ -151,26 +151,46 @@ body {
         display: inline-block;
         margin: 0 auto;
     }
-      
+    
+    @media screen and (max-width: 600px) {
+        .responsive-img {
+            max-width: 80%; /* Gambar lebih kecil di HP */
+        }
+    }    
 
-    .dokumentasi {
-        padding: 20px; /* Tambahkan padding untuk section */
-    }
-    
-    .dokumentasi div {
+    .dokumentasi-container {
         display: flex;
-        flex-wrap: wrap; /* Membungkus elemen ke baris berikutnya jika tidak muat */
-        gap: 20px; /* Jarak antar elemen */
-        justify-content: center; /* Menyusun elemen di tengah */
+        gap: 10px;
+        flex-wrap: wrap; /* Agar elemen turun ke bawah di layar kecil */
+        justify-content: center;
+        margin: 0 10px;
     }
     
-    .dokumentasi video,
-    .dokumentasi img {
-        max-width: 400px; /* Membuat elemen responsif */
-        width: auto;
-        height: auto; /* Menjaga rasio aspek */
-        max-height: 600px;
+    /* Untuk gambar */
+    .responsive-img {
+        max-width: 100%; /* Agar tidak lebih besar dari layar */
+        height: auto; /* Biarkan tinggi mengikuti skala aslinya */
+        max-width: 450px; /* Maksimal di layar besar */
+        object-fit: cover; /* Pastikan gambar tetap proporsional */
+        border-radius: 5px; /* Sudut membulat untuk estetika */
     }
+    
+    /* Untuk video */
+    .responsive-video {
+        max-width: 100%;
+        max-width: 450px;
+        aspect-ratio: 16 / 9; /* Biar video tetap proporsional */
+        border-radius: 5px; /* Sudut membulat untuk estetika */
+    }
+    
+    /* Khusus di HP (≤ 600px), gambar & video lebih kecil */
+    @media screen and (max-width: 600px) {
+        .responsive-img, .responsive-video {
+            max-width: 90%; /* Bisa diubah ke 80% atau 70% */
+        }
+    }
+    
+    
     
       /* Media Query untuk Responsivitas */
       @media (max-width: 768px) {
