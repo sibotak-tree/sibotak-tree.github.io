@@ -133,7 +133,45 @@ body {
           font-size: 0.9em;
           color: #777;
       }
+
+      pre {
+        background-color: #f4f4f4; /* Warna latar belakang */
+        border: 1px solid #ddd; /* Border untuk pre */
+        border-radius: 5px; /* Sudut membulat */
+        padding: 10px; /* Padding di dalam pre */
+        overflow-x: auto; /* Menambahkan scroll horizontal jika konten terlalu lebar */
+        white-space: pre-wrap; /* Membungkus teks agar tidak keluar dari kontainer */
+        word-wrap: break-word; /* Memecah kata yang terlalu panjang */
+    }
+    
+    .responsive-img {
+        max-width: 100%;
+        height: auto;
+        max-width: 500px;
+        display: inline-block;
+        margin: 0 auto;
+    }
       
+
+    .dokumentasi {
+        padding: 20px; /* Tambahkan padding untuk section */
+    }
+    
+    .dokumentasi div {
+        display: flex;
+        flex-wrap: wrap; /* Membungkus elemen ke baris berikutnya jika tidak muat */
+        gap: 20px; /* Jarak antar elemen */
+        justify-content: center; /* Menyusun elemen di tengah */
+    }
+    
+    .dokumentasi video,
+    .dokumentasi img {
+        max-width: 400px; /* Membuat elemen responsif */
+        width: auto;
+        height: auto; /* Menjaga rasio aspek */
+        max-height: 600px;
+    }
+    
       /* Media Query untuk Responsivitas */
       @media (max-width: 768px) {
           .nav-menu {
