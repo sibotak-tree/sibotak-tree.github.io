@@ -179,7 +179,9 @@ body {
     .responsive-video {
         max-width: 100%;
         max-width: 450px;
-        aspect-ratio: 16 / 9; /* Biar video tetap proporsional */
+        height: auto;
+        width: auto;
+        object-fit: cover;
         border-radius: 5px; /* Sudut membulat untuk estetika */
     }
     
